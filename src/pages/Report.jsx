@@ -11,7 +11,7 @@ export default function Reports() {
     <VStack align="stretch" spacing={8}>
       <Header />
 
-      {/* Stats + Chart in one row */}
+     
       <Grid templateColumns={{ base: "1fr", lg: "1fr 1fr" }} gap={6} alignItems="stretch">
   {/* Left side: take full height, split into 2 equal rows */}
   <GridItem>
@@ -55,7 +55,7 @@ export default function Reports() {
   <GridItem>
     <ActivityChart />
   </GridItem>
-</Grid>
+</Grid> 
 
 
 
@@ -125,7 +125,7 @@ export default function Reports() {
    <Leaderboard
   title="User Leaderboard"
   headingColor="gray"
-  showAvatars={true}   // avatars visible here
+  showAvatars={true}   
   data={[
     { name: "Jesse Thomas", trend: "up", subtext: "635 points, 90% correct", avatar: "https://i.pravatar.cc/40?img=1" },
     { name: "Thisal Mathiyazhagan", trend: "down", subtext: "580 points, 85% correct", avatar: "https://i.pravatar.cc/40?img=2" },

@@ -10,13 +10,18 @@ import {
 
 
 const data = [
-  { name: "Mon", users: 30 },
-  { name: "Tue", users: 45 },
-  { name: "Wed", users: 60 },
-  { name: "Thu", users: 50 },
-  { name: "Fri", users: 70 },
-  { name: "Sat", users: 40 },
-  { name: "Sun", users: 55 },
+  { name: "Jan", users: 30 },
+  { name: "Feb", users: 45 },
+  { name: "Mar", users: 60 },
+  { name: "Apr", users: 50 },
+  { name: "May", users: 70 },
+  { name: "Jun", users: 40 },
+  { name: "Jul", users: 55 },
+  { name: "Aug", users: 75 },
+  { name: "Sep", users: 65 },
+  { name: "Oct", users: 80 },
+  { name: "Nov", users: 90 },
+  { name: "Dec", users: 60 },
 ];
 
 export default function ActivityChart() {
@@ -38,7 +43,7 @@ export default function ActivityChart() {
           <XAxis dataKey="name" />
           <YAxis />
           <Tooltip />
-          <Bar dataKey="users" fill="#4193dfff" radius={[6, 6, 0, 0]}  barSize={30} />
+          <Bar dataKey="users" fill="#4193dfff" radius={[6, 6, 0, 0]}  barSize={13} />
         </BarChart>
       </ResponsiveContainer>
     </Box>

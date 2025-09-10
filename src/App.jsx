@@ -1,24 +1,19 @@
 
 
-
-
-import { Flex, Box } from "@chakra-ui/react";
-import Sidebar from "./components/Sidebar";
-import Reports from "./pages/Report.jsx";
+import React from "react";
+import { ChakraProvider } from "@chakra-ui/react";
+import { Provider } from "react-redux";
+import store from "./store";
+import AuthWrapper from "./AuthWrapper";
 
 function App() {
   return (
-    <Flex>
-     
-      <Sidebar />
-
-     
-      <Box ml="250px" flex="1" bg="gray.50" minH="100vh" p={6}>
-        <Reports />
-      </Box>
-    </Flex>
+    <Provider store={store}>
+      <ChakraProvider>
+        <AuthWrapper />
+      </ChakraProvider>
+    </Provider>
   );
 }
 
 export default App;
-
